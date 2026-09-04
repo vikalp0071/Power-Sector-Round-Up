@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Sector Round-up - August 3rd Week</title>
+    <style>
+        :root {
+            --primary-color: #1a2b4c;
+            --accent-color: #d97706;
+            --text-color: #334155;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Shared Navigation Menu */
+        nav {
+            background: var(--primary-color);
+            padding: 15px;
+            text-align: center;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Magazine Header */
+        header {
+            text-align: center;
+            border-bottom: 4px double var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+
+        .magazine-title {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin: 0 0 10px 0;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        .meta-bar {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 8px 0;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        /* Main Layout */
+        .magazine-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .magazine-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 { font-size: 2.2rem; }
+        }
+
+        /* Section Styling */
+        .category-block {
+            margin-bottom: 40px;
+        }
+
+        .category-title {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        /* Article Cards */
+        .article {
+            background: var(--card-bg);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            border-left: 3px solid var(--border-color);
+            transition: transform 0.2s;
+        }
+
+        .article:hover {
+            transform: translateY(-2px);
+            border-left-color: var(--accent-color);
+        }
+
+        .article-text {
+            margin: 0 0 10px 0;
+            font-size: 1.05rem;
+        }
+
+        .source {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.8rem;
+            color: #94a3b8;
+            font-style: italic;
+            text-align: right;
+            display: block;
+        }
+
+        /* Sidebar Elements */
+        .sidebar {
+            background-color: #f1f5f9;
+            padding: 25px;
+            border-radius: 6px;
+            height: fit-content;
+        }
+
+        .stat-box {
+            background: var(--primary-color);
+            color: white;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 60px;
+            border-top: 1px solid var(--border-color);
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Header pointing to your other pages -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="magazine.html">August 4th Week</a>
+    <a href="magazine-aug3.html">August 3rd Week</a>
+</nav>
+
+<div class="container">
+    <header>
+        <div class="magazine-title">Weekly Briefing Insights</div>
+        <h1>Power Sector Round-up</h1>
+        <div class="meta-bar">
+            <span><strong>Period:</strong> August 3rd Week (16/08 to 23/08)</span>
+            <span><strong>Compiled by:</strong> Vinay Pandey</span>
+        </div>
+    </header>
+
+    <div class="magazine-grid">
+        <!-- Main Content Column -->
+        <main>
+            <!-- Policy Section -->
+            <section class="category-block">
+                <div class="category-title">Policy Insights</div>
+                
+                <div class="article">
+                    <p class="article-text">On 14th, to operationalise the SHANTI Act, 2025, Department of Atomic Energy released ‘Draft SHANTI Rules, 2026’ and the ‘Draft SHANTI Regulations 2026’. Suggestions & feedback on both may be mailed by 8:00 PM on 04 Sept.26 to feedback.shanti@dae.gov.in.</p>
+                    <span class="source">— DAE Notification</span>
+                </div>
+            </section>
+
+            <!-- Legal Section -->
+            <section class="category-block">
+                <div class="category-title">Legal Briefs</div>
+                
+                <div class="article">
+                    <p class="article-text">On 17th, Supreme Court, in the Karnataka Discom appeal (CA 8808/2026) against APTEL interim order allowing Adani Power's ₹1,005 Cr invoice, refused to grant Stay but directed APTEL to decide the Appeal in 3 months.</p>
+                    <span class="source">— Judicial Update</span>
+                </div>
+
+                <div class="article">
+                    <p class="article-text">Days after Maharashtra CM letter to Prime Minister on pro IPP bias of APTEL, Solicitor General Tushar Mehta requested the top court: <em>"The CJI must examine what is happening in APTEL"</em>. He was pursuing an urgent hearing on Appeal against APTEL's refusal to allow review by MERC in JSW Energy case.</p>
+                    <span class="source">— ET, Aug 22</span>
+                </div>
+            </section>
+
+            <!-- Regulatory Section -->
+            <section class="category-block">
+                <div class="category-title">Regulatory Frameworks</div>
+                
+                <div class="article">
+                    <p class="article-text">On 14th, CERC, using ‘Power to Relax’ in petition No. 5/SM/2026, prescribed a Milestone Extension Charge (MEC) framework for connectivity grantees seeking additional time to meet the Land, Financial Closure, and COD milestones prescribed under GNA Regulations.</p>
+                    <span class="source">— CERC Order</span>
+                </div>
+            </section>
+
+            <!-- Commercial Section -->
+            <section class="category-block">
+                <div class="category-title">Commercial Deal Flow</div>
+                
+                <div class="article">
+                    <p class="article-text">Oriana Power has won a ₹214.80 Cr EPC contract from a leading cement player to develop 50 MW of solar power projects in Rajasthan. The project timeline is 9 months and includes 10-year O&M.</p>
+                    <span class="source">— Corporate Release</span>
+                </div>
+
+                <div class="article">
+                    <p class="article-text">MoP is exploring a proposal to provide about ₹18,700 Cr subordinated debt at a low interest rate for NHPC’s 1,856 MW Sawalkote HEP in J&K. Last year, an MNRE expert committee estimated the project cost at ₹31,380 Cr.</p>
+                    <span class="source">— ET, Aug 19</span>
+                </div>
+
+                <div class="article">
+                    <p class="article-text">In SECI's 6,000 MWh (1,500 MW x 4 hrs) Assured Peak Power tender, Waaree Energies won 700 MW at a tariff of Rs. 5.99/kWh, followed by NTPC Renewables and Acme Solar Holdings securing 500 MW & 750 MW, respectively, at Rs. 6/kWh.</p>
+                    <span class="source">— Saur Energy, Aug 22</span>
+                </div>
+
+                <div class="article">
+                    <p class="article-text">Hindustan Power has achieved financial closure with IREDA for a debt of ₹1,135 Cr. The 435 MWp solar power project in Lalitpur, won in 2025, has a 25-year PPA with UPPCL.</p>
+                    <span class="source">— Financial Closure Record</span>
+                </div>
+
+              <div class="article">
+                    <p class="article-text">On 21st, Power Grid won LOI to integrate 5,500 MW from Jam Khambhaliya Ph II and 1,000 MW from Jamnagar PH I under TBCB (BOOT model) at an annual transmission charge of ₹822.91 Cr. Scope includes building a new GIS, four 1,500 MVA & ten 500 MVA transformers, 765 kV DC lines, and other augmentations.</p>
+                    <span class="source">—TBCB Win </span>
+                </div>
+
+              <div class="article">
+                    <p class="article-text">As per unconfirmed reports, Power Grid has also won a ₹26,000 Cr mega contract. Scope includes 6,000 MW terminal stations at Barmer-II & South Kalamb, Maharashtra with about 900 km ±800 kV HVDC line, a new pooling S/s at Barmer-II with connecting line to Barmer-I, and other extensions.</p>
+                    <span class="source">— T&D India, Aug 23 </span>
+                </div>
+
+              
+
+                <div class="article">
